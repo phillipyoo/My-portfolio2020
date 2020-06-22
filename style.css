@@ -3,7 +3,7 @@
 
 #body-background {
     background-color: #E7E3D2;
-    position:fixed;
+    position:absolute;
     width: 70vw;
     height: 70vh;
     right:0;
@@ -14,7 +14,7 @@
 
 #top-left-deco {
   background-color: #E7E3D2;
-  position: absolute;
+  position: fixed;
   opacity: 50%;
   top:0px;
   left:0px;
@@ -28,7 +28,7 @@
   background-color:white;
   position: absolute;
   height:25vh;
-  width:30vw;
+  width:25vw;
   top:5vh;
   left:-20vw;
   border: 1px;
@@ -37,8 +37,11 @@
 }
 
 
-#main-header h1 {
+h1 {
   font-family: 'Archivo', sans-serif;
+}
+
+#main-header h1 {
   font-size: 3.5vw;
   margin-left:5%;
 }
@@ -47,38 +50,36 @@
   background-color:white;
   position: absolute;
   height:10vh;
-  width:50vw;
+  width:47vw;
   top:40vh;
-  left:-30%;
-  border: 1px;
-  padding: 10px;
+  left:-20vw;
   box-shadow: 5px 10px 18px #888888;
 }
 
 #sub-header h1{
-  font-family: 'Archivo', sans-serif;
   margin-left: 5%;
   font-size: 2.5vw;
 }
 
 #my-education {
   background-color:rgba(0, 0, 0, 0.461);
-  position: absolute;
+  position: relative;
   height:30vh;
   width:15vw;
   top:22%;
-  left:40%;
+  left:23vw;
 }
 
 
  h2 {
   position: absolute;
   top:30%;
-  left:32%;
+  left:13vw;
   font-family: 'Roboto', sans-serif;
   font-size: 2vw;
   color:white;
   font-style: italic;
+  letter-spacing:10px;
   
 }
 
@@ -89,7 +90,6 @@
   position: fixed;
   top:0;
   right:0;
-  margin:auto;
 }
 
 #nav {
@@ -107,8 +107,41 @@
   text-decoration: none;
 }
 
+#profile-pic {
+  position: absolute;
+  width:19vw;
+  right:6vw;
+  top:8vh;
+  border-radius: 90vw;
+}
 
+#about-me {
+  margin-top:110vh;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  font-size: 2vw;
+  line-height: 40px;
 
+}
 
+#illustration {
+  height:60vh;
+  width:30vw;
+  border-radius: 360px;
+  background-color: #E7E3D2;
+}
 
+span {
+  color:black;
+}
 
+#work {
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  font-size: 2vw;
+  margin-top: 10vh;
+
+}
+ #work img {
+   width:40vw
+ }
