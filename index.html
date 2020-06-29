@@ -11,17 +11,21 @@
 <div id="navbar-background">
         <ul id="nav">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact me</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
 </div>
 
-    <div id="top-left-deco"></div>
+<div id="top-left-deco"></div>
+<div id="mid-left-deco"></div>
+<div id="mid-right-deco"></div>
+
+    
     
     <div id="body-background">
         <div id="main-header">
-            <h1>Phillip<br/> Yoo</h1>
+            <h1 >Phillip<br/> Yoo</h1>
         </div>
 
         <div id="sub-header">
@@ -35,13 +39,13 @@
             <span>eye to</span> design
         </h2>
 
-        <img id="profile-pic" src="./IMG_1553.JPG">
+        <img id="profile-pic" src="./images/IMG_1553.JPG">
     </div>
-
-
+    
+    
     <div id="about-me">
-        <h1>About me</h1>
-        <img id="illustration" src="./aboutme.svg"/>
+        <h1 class="my-text-style">About me</h1>
+        <img id="illustration" src="./images/aboutme.svg"/>
         <p>
             Junior web designer/developer based 
             <br/> on the Gold Coast, Australia.
@@ -49,13 +53,56 @@
             <br/> web and mobile interfaces.
         </p>
     </div>
-
+    
     <div id="work">
-        <h1>Work</h1>
-        <img src="./sneaker-marketplace.png"/>
+        <h1 class="my-text-style">Work</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://sneaker-marketplace.herokuapp.com/" target="_blank">
+                    <img src="./images/sneaker-marketplace.png"/>
+                </a>
+                <h3>Sneaker marketplace</h3>
+                    <p>Tech Stack: Ruby</p>
+            </div>
+            
+            <div class="grid-item">
+                <a href="https://nocovidhere.netlify.app/" target="_blank">
+                    <img src="./images/nocovid.png"/>
+                </a>
+                <h3>Nocovid</h3>
+                    <p>Tech Stack: Javascript, MongoDB, Express js, Node js</p>
+            </div>
 
+            <div class="grid-item">
+                <a href="https://github.com/phillipyoo/21app" target="_blank">
+                    <img src="./images/21terminalapp.png"/> 
+                </a>
+                <h3>21 card game</h3>
+                    <p>Tech Stack: Ruby</p>
+            </div>            
+        </div> 
     </div>
 
+
+    <div class="action" onclick="actionToggle();" id='share'>
+        <span>+</span>
+        <ul class='social'>
+        <h3 style='text-align: center;'>Keep in touch</h3>
+            <a href="https://www.facebook.com/phillip.yoo.93/" target="_blank" class='anc'>
+                <li><img src="./images/facebook.png">Facebook</li>
+            </a>
+
+            <a href="https://www.linkedin.com/in/phillipdongyoo/"
+                target="_blank" class='anc'>
+                <li><img src="./images/linkedin.png">Linkedin</li>
+            </a>
+
+            <a href="https://github.com/phillipyoo" target="_blank"
+                class='anc'>
+                <li><img src="./images/github.png">Github</li>
+            </a>
+        </ul>
+    </div>
 
     <script src="index.js"></script>
 </body>
